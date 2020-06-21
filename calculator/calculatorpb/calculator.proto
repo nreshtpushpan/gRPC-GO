@@ -46,4 +46,5 @@ message SquareRootResponse {
 
 service CalculatorService {
     rpc Sum(SumRequest) returns (SumResponse) {};
+    rpc PrimeNumberDecomposition(PrimeNumberDecompositionRequest) returns (stream PrimeNumberDecompositionResponse) {};
 }
